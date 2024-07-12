@@ -4,6 +4,10 @@ body {
   font-weight: 400;
   background-color: #fbd59d;
 }
+main{
+  display: flex;
+  flex-direction: column;
+}
 .coiny-regular {
   font-family: "Coiny", system-ui;
   font-weight: 400;
@@ -14,3 +18,24 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.container{
+  /* height: 80px; */
+  /* padding: 20px; */
+}
+.card-cont{
+background-color: #0D3B66;
+padding: 20px;
+border: 2px solid black;
+height: 50vh;
+margin: 20px;
+color: #FFB800;
+}
+.card-cont , .about-cont{
+  height: 30vh;
+}
+.map{
+  height: 100px;
+  background-color: #9CC4DA;
+}
+
