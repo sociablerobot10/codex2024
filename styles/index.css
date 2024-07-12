@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: "Questrial", sans-serif;
+  /*whats system-ui*/
+  font-family: "Questrial", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: #fbd59d;
@@ -29,6 +30,7 @@ i {
   right: 2em;
   top: 1em;
 }
+
 .navigation {
   display: none;
 }
@@ -54,6 +56,7 @@ img {
 iframe {
   width: 90%;
   margin: 0 auto;
+  height: 50vh;
 }
 main {
   display: flex;
@@ -83,7 +86,7 @@ img {
   height: auto;
 }
 .map {
-  height: 100px;
+
   background-color: #9cc4da;
 }
 .btn {
@@ -93,6 +96,10 @@ img {
   align-self: center;
   padding: 3px;
   font-size: 27px;
+}
+.btn:hover{
+  background-color: #ED863B;
+  cursor: pointer;
 }
 .open-btn {
   border-radius: 5%;
@@ -105,23 +112,45 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition:  0.5s ease-in-out;
 }
 .card-open div {
   display: flex;
   text-align: left;
 }
+.open-icon-cont{
+display: flex;
+flex-direction: column;
+}
+.open-icon-cont img + img{
+  margin-left: -45px;
+}
 .card-open h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 .card-open h2 {
-  font-size: 38px;
+  font-size: 41px;
+  color: #ED863B;
 }
 .card-open h3 {
-  font-size: 30px;
+  font-size: 34px;
 }
 .card-closed {
   color: #db5375;
-  font-family: "Coiny", system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-closed h1{
+  font-size: 45px;
+}
+.fa-solid .fa-bridge{
+  color: #db5375;
+  
+}
+.fa-solid i{
+  position: unset;
+  font-size: 70px;
 }
 .card-img {
   width: 100px;
@@ -134,10 +163,11 @@ img {
 .card-disappear {
   visibility: hidden;
   display: none;
+  transition:  opacity 0.3s ease-in-out;
 }
-.fade-out {
+.fade {
   transition: opacity 0.5s ease-in-out;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 /* MEDIA QUERIES */
