@@ -13,40 +13,72 @@
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title></title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navigation container">
-          <ul class="navLinks">
-            <li class="navLink"><a href="#about">About</a></li>
-            <li class="navLink"><a href="#map">Location</a></li>
-            <li class="navLink"><a href="#">Date</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="navigation">
+          <li class="navListItem"><a href="#" class="navListLink">About</a></li>
+          <li class="navListItem">
+            <a href="#map" class="navListLink">Where</a>
+          </li>
+          <li class="navListItem"><a href="#" class="navListLink">When</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <div class="container card-cont">
+      <div class="card-cont card-appear">
         <section class="card-closed">
           <h1 class="coiny-regular">You're Invited</h1>
+          <img class="card-img" src="./public/images/bridge.png" />
+          <button class="open-btn">Click to Open</button>
+        </section>
+      </div>
+      <div class="card-cont card-invite card-disappear">
+        <section class="card-open coiny-regular">
+          <div>
+            <h1>BROOKLYN STOOP SALE</h1>
+            <img src="./public/images/shirt.svg" />
+            <img src="./public/images/purse.svg" />
+          </div>
+          <div>
+            <img src="./public/images/jeans.svg" />
+            <h2>Sat, July 12 3 PM</h2>
+          </div>
+          <h3>2nd Pl. and Court St</h3>
+          <button class="btn">Share with Friends</button>
         </section>
       </div>
     </main>
-    <section class="container card-cont about-cont">
-      <div id="about"class="about">
-        <h2>what are we</h2>
-        <p>what to expect</p>
-        <p>How do I get there? </p>
-
+    <section class="card-cont about-cont">
+      <div id="about" class="about">
+        <h2>What We Do?</h2>
+        <p>What to expect?</p>
+        <p>How do I get there?</p>
       </div>
     </section>
-    <section class="container card-cont">
-      <div id="map" class="map">
-        <h3>map</h3>
+    <section class="card-cont">
+      <iframe
+        id="map"
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7485407362815!2d-73.99728080000001!3d40.679509200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a585c181957%3A0x50e694b8c1ef75b2!2s2nd%20Pl%20%26%20Court%20St%2C%20Brooklyn%2C%20NY%2011231%2C%20USA!5e0!3m2!1sen!2spa!4v1720762710692!5m2!1sen!2spa"
+        width="600"
+        height="auto"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+   
+        <div>
+          <button class="btn">Bring friends!</button>
+        </div>
       </div>
     </section>
     <script src="/js/main.js"></script>

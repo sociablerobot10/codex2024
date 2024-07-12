@@ -1,10 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Questrial", sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: #fbd59d;
 }
-main{
+/* nav bar */
+
+/*BASE STYLES*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+header {
+  background-color: #fbd59d;
+  padding: 3em 0;
+}
+i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2em;
+  top: 1em;
+}
+.navigation {
+  display: none;
+}
+.navListItem {
+  list-style-type: none;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.navListLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0d3b66;
+  font-weight: bold;
+}
+.navListLink:hover {
+  border-bottom: 2px solid yellow;
+  color: salmon;
+}
+iframe,
+img {
+  max-width: 100%;
+}
+iframe {
+  width: 90%;
+  margin: 0 auto;
+}
+main {
   display: flex;
   flex-direction: column;
 }
@@ -13,29 +64,90 @@ main{
   font-weight: 400;
   font-style: normal;
 }
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container{
-  /* height: 80px; */
-  /* padding: 20px; */
-}
-.card-cont{
-background-color: #0D3B66;
-padding: 20px;
-border: 2px solid black;
-height: 50vh;
-margin: 20px;
-color: #FFB800;
-}
-.card-cont , .about-cont{
-  height: 30vh;
-}
-.map{
+img {
+  width: 100px;
   height: 100px;
-  background-color: #9CC4DA;
 }
 
+.card-cont {
+  background-color: #0d3b66;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 20px;
+  color: #ffb800;
+  border-radius: 2%;
+  text-align: center;
+}
+.card-cont,
+.about-cont {
+  height: auto;
+}
+.map {
+  height: 100px;
+  background-color: #9cc4da;
+}
+.btn {
+  background-color: #ffb800;
+  color: #0d3b66;
+  border-radius: 15px;
+  align-self: center;
+  padding: 3px;
+  font-size: 27px;
+}
+.open-btn {
+  border-radius: 5%;
+  padding: 10px;
+}
+.open-btn:hover {
+  opacity: 0.5;
+}
+.card-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-open div {
+  display: flex;
+  text-align: left;
+}
+.card-open h1 {
+  font-size: 40px;
+}
+.card-open h2 {
+  font-size: 38px;
+}
+.card-open h3 {
+  font-size: 30px;
+}
+.card-closed {
+  color: #db5375;
+  font-family: "Coiny", system-ui;
+}
+.card-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 30px;
+
+  background-color: #db5375;
+}
+
+.card-disappear {
+  visibility: hidden;
+  display: none;
+}
+.fade-out {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 650px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  i {
+    display: none;
+  }
+}
