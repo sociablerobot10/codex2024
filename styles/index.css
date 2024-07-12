@@ -5,7 +5,6 @@
 }
 
 body {
-  /*whats system-ui*/
   font-family: "Questrial", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -18,7 +17,6 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  /* border: 2px solid black; */
 }
 header {
   background-color: #fbd59d;
@@ -56,7 +54,7 @@ iframe,
 img {
   max-width: 100%;
 }
-iframe {
+.map-cont iframe {
   width: 90%;
   margin: 0 auto;
   height: 50vh;
@@ -74,7 +72,6 @@ img {
   width: 100px;
   height: 100px;
 }
-
 .card-cont {
   background-color: #0d3b66;
   padding: 20px;
@@ -84,6 +81,7 @@ img {
   border-radius: 2%;
   text-align: center;
 }
+/*about */
 .card-cont,
 .about-cont {
   height: auto;
@@ -107,7 +105,7 @@ img {
   background-color: #ed863b;
   cursor: pointer;
 }
-
+/* intro cards*/
 .card-open {
   display: flex;
   flex-direction: column;
@@ -174,6 +172,8 @@ a {
 }
 .about h2 {
   color: #ed863b;
+}
+#twitter-widget-0 iframe {
 }
 
 /* MEDIA QUERIES */

@@ -36,15 +36,11 @@
         </ul>
       </nav>
     </header>
-    <!-- animate__fast -->
     <main>
       <div class="card-cont card-appear fade">
         <section class="coiny-regular card-closed">
           <h1 class="">YOU'RE INVITED</h1>
-          <!-- <img class="card-img" src="./public/images/bridge.png" /> -->
-          <!-- only shows up on click-->
-          <p><i class="fa-solid fa-bridge bridge--icon"></i></p>
-          
+          <p><i class="fa-solid fa-bridge bridge--icon"></i></p>         
           <button class="btn open-btn">Click to Open</button>
         </section>
       </div>
@@ -63,20 +59,21 @@
             <h2>Sat, July 12 3 PM</h2>
           </div>
           <h3>2nd Pl. and Court St</h3>
-           <!-- should all buttons be the same as this one?  yes-->
+          
 
           <button class="more-btn btn"><a href=#about>Find Out More</a></button>
-          <button class="btn">Share with your Friends</button>
+         
+          
         </section>
       </div>
     </main>
     <section class="card-cont about-cont card-disappear fade">
       <div id="about" class="about coiny-regular">
-        <!-- maybe just one line each, eye catchy easy to read-->
+      
         <h2>What to expect?</h2>
         <span>Plenty of great pre-loved and STYLISH items</span>
         <h2>How do I get there?</h2>
-        <!--idk-->
+        
         <button class="btn map-btn"><a href="#map">Follow the treasure map</a></button>
       </div>
     </section>
@@ -95,8 +92,20 @@
    
        
       </div>
-      <button class="btn coiny-regular">Share with your Friends</button>
+      <button  id="socials" class="btn socials-btn coiny-regular">Share with your Friends</button>
+
+      <section class="socials card-disappear btn">
+
+        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-hashtag-button twitter-hashtag-button-rendered twitter-tweet-button" title="X Post Button" src="https://platform.twitter.com/widgets/tweet_button.2f70fb173b9000da126c79afe2098f02.en.html#button_hashtag=share&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fcodedex-hackathon-navbar.glitch.me%2F&amp;size=m&amp;time=1720796072948&amp;type=hashtag&amp;url=https%3A%2F%2Fwww.google.com%2F" data-hashtag="share" style="position: static; visibility: visible; width: 107px; height: 20px;"></iframe>
+
+        <a href="https://twitter.com/intent/tweet?button_hashtag=share&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Brooklyn Summer Stoop Sale" data-url=" https://brooklynsummerstoop.netlify.app/" data-show-count="false">Tweet #share</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div class="fb-share-button" data-href="https://brooklynsummerstoop.netlify.app/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbrooklynsummerstoop.netlify.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
     </section>
-    <script src="/js/main.js"></script>
+
+    </section>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0" nonce="CKJy6rwf"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
