@@ -1,0 +1,15 @@
+body {
+  font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #fbd59d;
+}
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
