@@ -26,13 +26,13 @@
   <body>
     <header>
       <nav class="container">
-        <i class="fa-solid fa-bars"></i>
+       
         <ul class="navigation">
-          <li class="navListItem"><a href="#" class="navListLink">About</a></li>
+          <li class="navListItem"><a href="#about" class="navListLink">About</a></li>
           <li class="navListItem">
             <a href="#map" class="navListLink">Where</a>
           </li>
-          <li class="navListItem"><a href="#" class="navListLink">When</a></li>
+          <li class="navListItem"><a href="#when" class="navListLink">When</a></li>
         </ul>
       </nav>
     </header>
@@ -43,9 +43,9 @@
           <h1 class="">YOU'RE INVITED</h1>
           <!-- <img class="card-img" src="./public/images/bridge.png" /> -->
           <!-- only shows up on click-->
-          <p><i class="fa-solid fa-bridge"></i></p>
+          <p><i class="fa-solid fa-bridge bridge--icon"></i></p>
           
-          <button class="open-btn">Click to Open</button>
+          <button class="btn open-btn">Click to Open</button>
         </section>
       </div>
       <div class="card-cont card-invite card-disappear fade ">
@@ -58,27 +58,29 @@
             </div>
           
           </div>
-          <div>
+          <div id="when">
             <img src="./public/images/jeans.svg" />
             <h2>Sat, July 12 3 PM</h2>
           </div>
           <h3>2nd Pl. and Court St</h3>
-           <!-- should all buttons be the same as this one? -->
+           <!-- should all buttons be the same as this one?  yes-->
+
+          <button class="more-btn btn"><a href=#about>Find Out More</a></button>
           <button class="btn">Share with your Friends</button>
         </section>
       </div>
     </main>
-    <section class="card-cont about-cont">
-      <div id="about" class="about">
+    <section class="card-cont about-cont card-disappear fade">
+      <div id="about" class="about coiny-regular">
         <!-- maybe just one line each, eye catchy easy to read-->
         <h2>What to expect?</h2>
         <span>Plenty of great pre-loved and STYLISH items</span>
         <h2>How do I get there?</h2>
         <!--idk-->
-        <button class="btn">Follow the treasure map</button>
+        <button class="btn map-btn"><a href="#map">Follow the treasure map</a></button>
       </div>
     </section>
-    <section class="card-cont">
+    <section class="card-cont map-cont card-disappear fade">
       <iframe
         id="map"
         class="map"
@@ -91,11 +93,9 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
    
-        <div>
-         
-          <button class="btn"><a href="Bring Friends"></a></button>
-        </div>
+       
       </div>
+      <button class="btn coiny-regular">Share with your Friends</button>
     </section>
     <script src="/js/main.js"></script>
   </body>
