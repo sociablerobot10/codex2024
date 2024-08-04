@@ -125,6 +125,7 @@ img {
 }
 .card-open h1 {
   font-size: 45px;
+  margin-bottom: 0px;
 }
 .card-open h2 {
   font-size: 41px;
@@ -141,6 +142,7 @@ img {
 }
 .card-closed h1 {
   font-size: 45px;
+  margin-top: 0px;
 }
 .fa-solid .fa-bridge {
   color: #db5375;
@@ -173,6 +175,12 @@ a {
 .about h2 {
   color: #ed863b;
 }
+.card-sunglasses {
+  width: 80%;
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 547px) {
@@ -181,13 +189,17 @@ a {
   }
   .card-open h1 {
     margin-left: 47px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
 @media (min-width: 650px) {
   .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
     align-items: center;
   }
 }
